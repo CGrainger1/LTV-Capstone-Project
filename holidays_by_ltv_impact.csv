@@ -1,0 +1,31 @@
+holiday,group,avg_ltv
+Victory Day,no_holiday,865.6000279067656
+International Youth Day,no_holiday,865.6000279067656
+Lunar New Year,no_holiday,865.8132834135437
+World Youth Skills Day,no_holiday,854.952997261747
+International Day for Preventing the Exploitation of the Environment in War and Armed Conflict,no_holiday,860.050986533077
+Memorial Day,no_holiday,874.3003193036598
+Ronald Reagan Day,no_holiday,857.6570899383771
+International Day of Zero Tolerance for Female Genital Mutilation,no_holiday,857.6570899383771
+National Girls and Women in Sports Day,no_holiday,857.6570899383771
+Sustainable Gastronomy Day,no_holiday,852.6935987804069
+Labor Day,no_holiday,863.292802332685
+Ganesh Chaturthi,no_holiday,863.292802332685
+Sweetest Day,no_holiday,858.5651674446848
+International Day of United Nations Peacekeepers,no_holiday,866.2319778743247
+New Year's Eve,no_holiday,864.2077343145155
+Victory Day,with_holiday,6823.725069395582
+International Youth Day,with_holiday,6823.725069395582
+Lunar New Year,with_holiday,6719.58529691893
+World Youth Skills Day,with_holiday,6438.989015820721
+International Day for Preventing the Exploitation of the Environment in War and Armed Conflict,with_holiday,6064.124558741355
+Memorial Day,with_holiday,5976.6476731295215
+Ronald Reagan Day,with_holiday,5780.091766948492
+International Day of Zero Tolerance for Female Genital Mutilation,with_holiday,5780.091766948492
+National Girls and Women in Sports Day,with_holiday,5780.091766948492
+Sustainable Gastronomy Day,with_holiday,5455.320234025537
+Labor Day,with_holiday,5115.5692557760585
+Ganesh Chaturthi,with_holiday,5115.5692557760585
+Sweetest Day,with_holiday,4383.758952794826
+International Day of United Nations Peacekeepers,with_holiday,4255.566492292286
+New Year's Eve,with_holiday,4183.918087296104
