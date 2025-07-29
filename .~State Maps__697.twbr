@@ -1,0 +1,524 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='customers (team_3.customers) (nf_da_270525)' inline='true' name='federated.1lkti0m1js3eex1ey1a6j00yifog' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data-analytics-course-2.c8g8r1deus2v.eu-central-1.rds.amazonaws.com' name='postgres.0dj32lo0l6ibsv18u4aa10q4mpgu'>
+            <connection authentication='username-password' class='postgres' dbname='nf_da_270525' one-time-sql='' port='5432' server='data-analytics-course-2.c8g8r1deus2v.eu-central-1.rds.amazonaws.com' username='callumgrainger' />
+          </named-connection>
+          <named-connection caption='data-analytics-course-2.c8g8r1deus2v.eu-central-1.rds.amazonaws.com (2)' name='postgres.17la8j415angov1cyr0800anfeb6'>
+            <connection authentication='username-password' class='postgres' dbname='nf_da_270525' one-time-sql='' port='5432' server='data-analytics-course-2.c8g8r1deus2v.eu-central-1.rds.amazonaws.com' username='callumgrainger' />
+          </named-connection>
+        </named-connections>
+        <relation connection='postgres.17la8j415angov1cyr0800anfeb6' name='mart_all_data' table='[team_3].[mart_all_data]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>customer_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[customer_id]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>customer_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_gender]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>customer_gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_location]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>customer_location</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_tenure_months</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[customer_tenure_months]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>customer_tenure_months</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaction_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[transaction_id]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>transaction_id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaction_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[transaction_date]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>transaction_date</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>produkt_sku</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[produkt_sku]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>produkt_sku</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[product_category]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>product_category</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[quantity]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>quantity</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_price]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>avg_price</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>delivery_charges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[delivery_charges]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>delivery_charges</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[revenue]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>revenue</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coupon_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[coupon_status]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>coupon_status</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>discount_pct</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[discount_pct]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>discount_pct</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gst_onsale</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gst_onsale]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>gst_onsale</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offline_spend_that_day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[offline_spend_that_day]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>offline_spend_that_day</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>online_spend_that_day</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[online_spend_that_day]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>online_spend_that_day</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaction_year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[transaction_year]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>transaction_year</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaction_month</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[transaction_month]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>transaction_month</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaction_month_str</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[transaction_month_str]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>transaction_month_str</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaction_day_of_month</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[transaction_day_of_month]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>transaction_day_of_month</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaction_day_of_week</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[transaction_day_of_week]</local-name>
+            <parent-name>[mart_all_data]</parent-name>
+            <remote-alias>transaction_day_of_week</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Customer ID' datatype='integer' name='[CustomerID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Location]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <semantic-values semantic-role='[State].[Name]'>
+          <semantic-value key='&quot;Chicago&quot;' value='&quot;Illinois&quot;' />
+        </semantic-values>
+      </column>
+      <column caption='mart_all_data' datatype='table' name='[__tableau_internal_object_id__].[mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2]' role='measure' type='quantitative' />
+      <column caption='Avg Price' datatype='real' name='[avg_price]' role='measure' type='quantitative' />
+      <column caption='Coupon Status' datatype='string' name='[coupon_status]' role='dimension' type='nominal' />
+      <column caption='Customer Gender' datatype='string' name='[customer_gender]' role='dimension' type='nominal' />
+      <column caption='Customer Id' datatype='integer' name='[customer_id]' role='dimension' type='ordinal' />
+      <column caption='Customer Location' datatype='string' name='[customer_location]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Customer Tenure Months' datatype='integer' name='[customer_tenure_months]' role='measure' type='quantitative' />
+      <column caption='Delivery Charges' datatype='real' name='[delivery_charges]' role='measure' type='quantitative' />
+      <column caption='Discount Pct' datatype='integer' name='[discount_pct]' role='measure' type='quantitative' />
+      <column caption='Gst Onsale' datatype='real' name='[gst_onsale]' role='measure' type='quantitative' />
+      <column caption='Offline Spend That Day' datatype='integer' name='[offline_spend_that_day]' role='dimension' type='quantitative' />
+      <column caption='Online Spend That Day' datatype='real' name='[online_spend_that_day]' role='dimension' type='quantitative' />
+      <column caption='Product Category1' datatype='string' name='[product_category]' role='dimension' type='nominal' />
+      <column caption='Produkt Sku' datatype='string' name='[produkt_sku]' role='dimension' type='nominal' />
+      <column caption='Quantity' datatype='integer' name='[quantity]' role='measure' type='quantitative' />
+      <column caption='Revenue' datatype='real' name='[revenue]' role='measure' type='quantitative' />
+      <column caption='Transaction Date' datatype='date' name='[transaction_date]' role='dimension' type='ordinal' />
+      <column caption='Transaction Day Of Month' datatype='real' name='[transaction_day_of_month]' role='dimension' type='quantitative' />
+      <column caption='Transaction Day Of Week' datatype='string' name='[transaction_day_of_week]' role='dimension' type='nominal' />
+      <column caption='Transaction Id' datatype='integer' name='[transaction_id]' role='dimension' type='ordinal' />
+      <column caption='Transaction Month' datatype='real' name='[transaction_month]' role='dimension' type='quantitative' />
+      <column caption='Transaction Month Str' datatype='string' name='[transaction_month_str]' role='dimension' type='nominal' />
+      <column caption='Transaction Year' datatype='real' name='[transaction_year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='mart_all_data' id='mart_all_data (team_3.mart_all_data)_40364F608BD0485DA4EA082DF7BC4AD2'>
+            <properties context=''>
+              <relation connection='postgres.17la8j415angov1cyr0800anfeb6' name='mart_all_data' table='[team_3].[mart_all_data]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5709A934-6504-43A2-9E37-74495A616CD5}' />
+    </worksheet>
+    <worksheet name='State Maps'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customers (team_3.customers) (nf_da_270525)' name='federated.1lkti0m1js3eex1ey1a6j00yifog' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1lkti0m1js3eex1ey1a6j00yifog'>
+            <column-instance column='[revenue]' derivation='Avg' name='[avg:revenue:qk]' pivot='key' type='quantitative' />
+            <column caption='Customer Id' datatype='integer' name='[customer_id]' role='dimension' type='ordinal' />
+            <column caption='Customer Location' datatype='string' name='[customer_location]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[customer_id]' derivation='None' name='[none:customer_id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[customer_location]' derivation='None' name='[none:customer_location:nk]' pivot='key' type='nominal' />
+            <column caption='Revenue' datatype='real' name='[revenue]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1lkti0m1js3eex1ey1a6j00yifog].[Longitude (generated)]' field-type='quantitative' max='-8010508.3493419141' min='-13612189.542343544' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1lkti0m1js3eex1ey1a6j00yifog].[Latitude (generated)]' field-type='quantitative' max='6431443.6670781616' min='3354539.2680967906' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1lkti0m1js3eex1ey1a6j00yifog].[avg:revenue:qk]' />
+              <lod column='[federated.1lkti0m1js3eex1ey1a6j00yifog].[none:customer_location:nk]' />
+              <lod column='[federated.1lkti0m1js3eex1ey1a6j00yifog].[none:customer_id:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1lkti0m1js3eex1ey1a6j00yifog].[Latitude (generated)]</rows>
+        <cols>[federated.1lkti0m1js3eex1ey1a6j00yifog].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{8A6A55EF-7A4D-49A7-996E-6453D2A44C28}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='State Maps'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1lkti0m1js3eex1ey1a6j00yifog].[avg:revenue:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{53956EBC-2D56-4BCF-8A46-14CDB657A140}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{11C07508-3532-427A-9F19-66307F9D729C}' />
+    </window>
+  </windows>
+</workbook>
