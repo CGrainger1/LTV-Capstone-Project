@@ -1,4 +1,4 @@
-month,product_category,coupon_code,discount_pct
+Month,Product_Category,Coupon_Code,Discount_pct
 Jan,Apparel,SALE10,10
 Feb,Apparel,SALE20,20
 Mar,Apparel,SALE30,30
